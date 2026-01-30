@@ -1,0 +1,22 @@
+{
+  "name": "miservicios",
+  "version": "0.0.1",
+  "description": "Aplicación para que todos puedan publicar sus servicios en internet",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "Servicios"
+  ],
+  "author": "Sebastián Londoño",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
