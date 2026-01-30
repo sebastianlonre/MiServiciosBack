@@ -1,4 +1,7 @@
 const http = require('http')
+const express = require('express')
+const app = express()
+
 
 const hostname = '127.0.0.1'
 const port = 3000
@@ -9,6 +12,10 @@ const server = http.createServer( (req, res ) => {
     res.end('Este es mi primer servidor en node!\n')
 })
 
+app.get('/', (req, res) => {
+  res.send('hello world')
+})
+
 server.listen( port, hostname, () => {
-    console.log(`Server runnint at https://${hostname}:${port}/`)
+    console.log(`Server runnint at http://${hostname}:${port}/`)
 })
