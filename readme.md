@@ -1,4 +1,8 @@
 ## Dependencias
 
+### API
+- express 5.2.1
+- nodemon 3.1.11
+
 ### Docker
-- **postgres imagen:** postgres:18.1-alpine3.23
+- **Imagen BD:** postgres:18.1-alpine3.23
