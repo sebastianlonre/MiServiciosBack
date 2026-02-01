@@ -1,6 +1,7 @@
 
 
 const authUser = async (request, response) => {
+
     const { userEmail, userPassword } = request.body
 
     response.send(userEmail + " " + userPassword)
@@ -20,7 +21,7 @@ const registerUser = async (request, response) => {
         secondLastName,
         companyName,
         userEmail,
-        codePhoneNumber,
+        codeCountry,
         phoneNumber,
         location
     } = request.body

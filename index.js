@@ -8,6 +8,6 @@ app.use(express.json())
 
 app.use('/api', mainRouter)
 
-app.listen(PORT, ()=>{
-    console.log(`Servidor Escuchando en la ruta http://localhost:${PORT}`)
+app.listen(PORT, () => {
+  console.log(`Servidor Escuchando en la ruta http://localhost:${PORT}`)
 })
