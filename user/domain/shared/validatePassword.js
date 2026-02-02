@@ -5,8 +5,6 @@ const validePassword = (password, register) => {
 
     const regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[._\-,@])[A-Za-z\d._\-,@]{8,}$/
 
-    console.log(regex.test(password))
-
     if (!register || regex.test(password)) {
         return { "ok": true, "message": "contraseña validada correctamente" }
     } else {

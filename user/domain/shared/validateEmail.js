@@ -7,7 +7,7 @@ const valideEmail = ( email ) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 
     if(!regex.test(email)) {
-        return {"ok": false, "message": "El correo del formato no es correcto"}
+        return {"ok": false, "message": "El formato del correo no es correcto"}
     }
 
     return {"ok": true, "message": "Correo validado"}
