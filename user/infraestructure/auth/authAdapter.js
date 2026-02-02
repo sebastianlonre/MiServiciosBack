@@ -1,10 +1,19 @@
+const { valideDataLogin } = require("../../aplication/auth")
+const { okReponse, errorResponse } = require("../http/responses")
 
 
 const authUser = async (request, response) => {
 
     const { userEmail, userPassword } = request.body
 
-    response.send(userEmail + " " + userPassword)
+    dataValidated = valideDataLogin(userEmail, userPassword)
+
+    if (dataValidated.ok) {
+        okReponse(response, 200, dataValidated.message)
+    } else {
+        errorResponse(response, 400, dataValidated.message)
+    }
+
 }
 
 const authUserGoogle = async (request, response) => {
