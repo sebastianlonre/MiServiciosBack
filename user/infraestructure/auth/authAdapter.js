@@ -1,7 +1,6 @@
 const { valideDataLogin } = require("../../aplication/auth")
 const { okReponse, errorResponse } = require("../http/responses")
 
-
 const authUser = async (request, response) => {
 
     const { userEmail, userPassword } = request.body
@@ -32,7 +31,8 @@ const registerUser = async (request, response) => {
         userEmail,
         codeCountry,
         phoneNumber,
-        location
+        location,
+        userPassword
     } = request.body
 
     response.send(userTag + " registrado con exito")
