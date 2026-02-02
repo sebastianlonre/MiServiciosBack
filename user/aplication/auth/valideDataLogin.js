@@ -1,4 +1,4 @@
-const { valideEmail, validePassword } = require("../../domain/shared")
+const { valideEmail, validePassword } = require("../../domain/validates")
 
 
 const valideDataLogin = (userEmail, userPassword) => {
